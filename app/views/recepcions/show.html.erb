@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Cliente:</strong>
+  <%= @recepcion.cliente.nombre %>
+</p>
+
+<p>
+  <strong>Veterinario:</strong>
+  <%= @recepcion.veterinario.nombre %>
+</p>
+
+<%= link_to 'Edit', edit_recepcion_path(@recepcion) %> |
+<%= link_to 'Back', recepcions_path %>

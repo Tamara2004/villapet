@@ -1,0 +1,25 @@
+<%= form_for(@recepcion) do |f| %>
+  <% if @recepcion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@recepcion.errors.count, "error") %> prohibited this recepcion from being saved:</h2>
+
+      <ul>
+      <% @recepcion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :cliente_id %><br>
+    <%= f.select( "cliente_id",Cliente.all.collect{|l| [ l.nombre, l.id ] }, {include_blank: 'Elija Cliente'}) %>
+  </div>
+  <div class="field">
+    <%= f.label :veterinario_id %><br>
+    <%= f.select( "veterinario_id",Veterinario.all.collect{|l| [ l.nombre, l.id ] }, {include_blank: 'Elija Recepcion'}) %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

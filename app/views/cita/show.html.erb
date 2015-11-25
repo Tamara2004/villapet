@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Control:</strong>
+  <%= @citum.control %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @citum.fecha %>
+</p>
+
+<p>
+  <strong>Obsevacion:</strong>
+  <%= @citum.obsevacion %>
+</p>
+
+
+<%= link_to 'Edit', edit_citum_path(@citum) %> |
+<%= link_to 'Back', cita_path %>

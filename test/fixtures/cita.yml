@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  control: MyString
+  fecha: 2015-11-23
+  obsevacion: MyString
+  recepcion_id: 
+
+two:
+  control: MyString
+  fecha: 2015-11-23
+  obsevacion: MyString
+  recepcion_id: 
